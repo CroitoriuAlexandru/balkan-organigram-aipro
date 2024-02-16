@@ -1,0 +1,24 @@
+[
+    { "id": "unasigned", "tags": [ "unasigned" ], "name": "Unasigned"}, 
+    { "id": "organigram", "tags": [ "organigram" ], "name": "Organigram", "movex": 0, "movey": 0 }, 
+    { "id": "management", "pid": 1, "tags": [ "management" ], "name": "Management"},
+
+    { "id": 1, "name": "CEO","stpid": "organigram",  "title": "CEO", "img": "https://cdn.balkan.app/shared/2.jpg", "tags": ["asigned-node-card-style", "organigram", "big-boss"] },
+    { "id": 2, "stpid": "management", "name": "2", "title": "Sales Manager", "img": "https://cdn.balkan.app/shared/3.jpg", "tags": ["asigned-node-card-style", "organigram"] },
+    { "id": 3, "pid": 1, "name": "3" , "title": "Dev Manager", "img": "https://cdn.balkan.app/shared/4.jpg", "tags": ["asigned-node-card-style", "organigram", "sd-employee"] },
+    { "id": 4, "pid": 2, "name": "4" , "title": "Sales", "img": "https://cdn.balkan.app/shared/5.jpg", "tags": ["asigned-node-card-style", "organigram", "sd-employee"] },
+    { "id": 5, "pid": 2, "name": "5" , "title": "Sales", "img": "https://cdn.balkan.app/shared/6.jpg", "tags": ["asigned-node-card-style", "organigram", "sd-employee"] },
+    { "id": 6, "pid": 3, "name": "6" , "title": "Developer", "img": "https://cdn.balkan.app/shared/7.jpg", "tags": ["asigned-node-card-style", "organigram", "sd-employee"] },
+    { "id": 7, "pid": 4, "name": "7" , "title": "Developer", "img": "https://cdn.balkan.app/shared/8.jpg", "tags": ["asigned-node-card-style", "organigram", "sd-employee"] },
+    { "id": 8, "pid": 4, "name": "8 " , "title": "Developer", "img": "https://cdn.balkan.app/shared/8.jpg", "tags": ["asigned-node-card-style", "organigram", "sd-employee"] },
+    { "id": 9, "pid": 5, "name": "9 " , "title": "Developer", "img": "https://cdn.balkan.app/shared/8.jpg", "tags": ["asigned-node-card-style", "organigram", "sd-employee"] },
+    { "id": 10, "pid": 5, "name": "10 " , "title": "Developer", "img": "https://cdn.balkan.app/shared/8.jpg", "tags": ["asigned-node-card-style", "organigram", "sd-employee"]},
+    { "id": 11, "pid": 6, "name": "11 " , "title": "Developer", "img": "https://cdn.balkan.app/shared/8.jpg", "tags": ["asigned-node-card-style", "organigram", "sd-employee"]},
+    { "id": 12, "pid": 6, "name": "12 " , "title": "Developer", "img": "https://cdn.balkan.app/shared/8.jpg", "tags": ["asigned-node-card-style", "organigram", "sd-employee"]},
+    { "id": 13, "pid": 3, "name": "13 " , "title": "Developer", "img": "https://cdn.balkan.app/shared/8.jpg", "tags": ["asigned-node-card-style", "organigram", "sd-employee"]},
+    { "id": 14, "pid": 3, "name": "14 " , "title": "Developer", "img": "https://cdn.balkan.app/shared/8.jpg", "tags": ["asigned-node-card-style", "organigram", "sd-employee"]},
+    { "id": 15, "stpid": "unasigned", "name": "15 " , "title": "Developer", "img": "https://cdn.balkan.app/shared/8.jpg", "tags": ["unasigned-node-card-style"] },
+    { "id": 16, "stpid": "unasigned", "name": "16 " , "title": "Developer", "img": "https://cdn.balkan.app/shared/8.jpg", "tags": ["unasigned-node-card-style"] },
+    { "id": 17, "stpid": "unasigned", "name": "17 " , "title": "Developer", "img": "https://cdn.balkan.app/shared/8.jpg", "tags": ["unasigned-node-card-style"] },
+    { "id": 18, "stpid": "unasigned", "name": "18 " , "title": "Developer", "img": "https://cdn.balkan.app/shared/8.jpg", "tags": ["unasigned-node-card-style"] }
+]
