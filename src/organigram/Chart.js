@@ -120,22 +120,38 @@ const Chart = () => {
                 draggedNodeId === "unasigned" ||
                 draggedNodeId === "management"
             ) return false;
-
             let draggedNode = sender.get(draggedNodeId);
+            if(!draggedNode.tags) return false;
             if(draggedNode.tags.includes("big-boss")) return false; 
         });
 
         chart.on("drop", (sender, draggedNodeId, droppedNodeId) => {
             console.log("drop started");
             let droppedNode = sender.get(droppedNodeId);
-            if(droppedNode.tags.indexOf( "unasigned") !== -1 || droppedNode.tags !== null)
+            if(droppedNode !== null) 
             {
-                breakHiererchy(sender,draggedNodeId);
-                return false;
-            } else {
-                return false;
+                if(droppedNode.tags.indexOf( "unasigned") !== -1 )
+                {
+                    breakHiererchy(sender,draggedNodeId);
+                    setTimeout(() => {
+                        sender.updateNode(sender.get(draggedNodeId));
+                    }, 200);
+                    return false;
+                } else {
+                    return false;
+                }
             }
         });
+
+
+
+
+
+
+
+
+
+
 
         chart.onUpdateNode((args) => {
             console.log(args);
