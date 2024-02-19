@@ -1,23 +1,30 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import OrgChart from './mytree';
-import jsonData from './nodesData.json';
+// import jsonData from './nodesData.json';
 
 export default class App extends Component {
 
-    createOrganigram() {
+  constructor(props) {
+    super(props);
+    this.state = {
+      selectedNode: null
+    };
+  }
+
+    // createOrganigram() {
      
-      return (
-        // <OrgChart />
-        <OrgChart nodes={jsonData} />
-      );
-    }
+    //   return (
+    //     // <OrgChart />
+    //     <OrgChart nodes={jsonData} />
+    //   );
+    // }
   
   
     render() {
         return (
             <div className="h-[100vh] bg-neutral-800 p-6" >
-              {/* <OrgChart /> */}
-              {this.createOrganigram()}
+              <OrgChart />
+              {/* {this.createOrganigram()} */}
             </div>
         );
     }
